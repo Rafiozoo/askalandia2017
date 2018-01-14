@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>askalandia_gorzow.kml</name>
+	<Style id="sh_ikona_mapa-google">
+		<IconStyle>
+			<scale>1.18182</scale>
+			<Icon>
+				<href>http://www.askalandia.pl/google/ikona_mapa-google.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sn_ikona_mapa-google">
+		<IconStyle>
+			<Icon>
+				<href>http://www.askalandia.pl/google/ikona_mapa-google.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_ikona_mapa-google">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ikona_mapa-google</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ikona_mapa-google</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>Askalandia</name>
+		<description><![CDATA[<img src="http://www.askalandia.pl/google/logo_askalandia_176x63.png" width="176" height="63" alt="Askalandia - Kraina Zabaw" style="margin-top:-10px; margin-bottom:4px"><br>
+al. Konstytucjii 3 Maja 102<br>
+66-400 Gorzów Wlkp.<br>
+tel. 95 78 30 300<br>
+<a href="http://www.askalandia.pl/" title="Sala zabaw w Gorzowie Wlkp.">www.askalandia.pl</a>]]></description>
+		<LookAt>
+			<longitude>15.22780834215609</longitude>
+			<latitude>52.73077021212562</latitude>
+			<altitude>0</altitude>
+			<heading>5.329492542537056</heading>
+			<tilt>0</tilt>
+			<range>282.6813905694781</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#msn_ikona_mapa-google</styleUrl>
+		<Point>
+			<coordinates>15.22776278744344,52.73109003841022,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

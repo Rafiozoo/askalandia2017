@@ -1,0 +1,65 @@
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^askalandia.pl(.*) [NC]
+RewriteRule ^(.*)$ http://www.askalandia.pl/$1 [R=301,L]
+</IfModule>
+
+Redirect 301 /atrakcje http://www.askalandia.pl/#atrakcje
+Redirect 301 /urodziny http://www.askalandia.pl/#urodziny
+Redirect 301 /regulamin http://www.askalandia.pl/#regulamin
+Redirect 301 /kontakt http://www.askalandia.pl/#kontakt
+Redirect 301 /do-pobrania http://www.askalandia.pl/#urodziny
+Redirect 301 /wp-content/uploads/2008/10/zaproszenie.pdf http://www.askalandia.pl/#urodziny
+Redirect 301 /category/zdjecia-galerie http://www.askalandia.pl/#atrakcje
+
+#Redirect all 404 Errors to index
+ErrorDocument 404 http://www.askalandia.pl
+
+### EXPIRES CACHING ##
+#<IfModule mod_expires.c>
+#ExpiresActive On
+#ExpiresDefault                         "access plus 1 day"
+#ExpiresByType application/json         "access plus 0 seconds"
+#ExpiresByType application/xml          "access plus 0 seconds"
+#ExpiresByType application/xhtml+xml    "access plus 0 seconds"
+#ExpiresByType text/xml                 "access plus 0 seconds"
+#ExpiresByType application/atom+xml     "access plus 1 hour"
+#ExpiresByType application/rss+xml      "access plus 1 hour"
+#ExpiresByType text/html	               "access plus 1 day"
+#ExpiresByType application/javascript   "access plus 1 week"
+#ExpiresByType application/x-javascript "access plus 1 week"
+#ExpiresByType text/javascript          "access plus 1 week"
+#ExpiresByType text/css                 "access plus 1 week"
+#ExpiresByType image/x-icon             "access plus 1 year"
+#ExpiresByType image/jpg                "access plus 1 year"
+#ExpiresByType image/jpeg               "access plus 1 year"
+#ExpiresByType image/gif                "access plus 1 year"
+#ExpiresByType image/png                "access plus 1 year"
+#ExpiresByType image/svg+xml            "access plus 1 year"
+#ExpiresByType audio/ogg                "access plus 1 year"
+#ExpiresByType video/mp4                "access plus 1 year"
+#ExpiresByType video/ogg                "access plus 1 year"
+#ExpiresByType video/webm               "access plus 1 year"
+#ExpiresByType application/pdf          "access plus 1 year"
+#ExpiresByType application/x-font-woff  "access plus 1 year"
+#Header set Cache-Control               "public"
+#Header set Cache-Control               "private"
+#Header set Cache-Control               "private, must-revalidate"
+#Header unset ETag
+#FileETag None
+#Header unset Last-Modified
+#</IfModule>
+### EXPIRES CACHING ##
+
+
+## CACHE-CONTROL ##
+# One year for image files
+<filesMatch ".(jpg|jpeg|png|gif|ico|svg)$">
+Header set Cache-Control "max-age=31536000, public"
+</filesMatch>
+# One week for css and js
+<filesMatch ".(css|js)$">
+Header set Cache-Control "max-age=604800, public"
+</filesMatch>
+## CACHE-CONTROL ##

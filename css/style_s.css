@@ -1,0 +1,876 @@
+
+
+body {
+	background: #B4E329;
+/* 	background: #B3208A; */
+	color: #ffffff;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 400;
+	overflow-x: hidden;
+	/* prevent horizontal scrollbar from appearing */
+}
+.preloader {
+position: fixed;
+top: 120px;
+left: 0;
+bottom: 0;
+right: 0;
+z-index: 99999;
+display: -ms-flexbox;
+display: flex;
+justify-content: center;
+align-items: center;
+-ms-flex-align: center;
+}
+.spinner {
+  margin: -37px auto 0;
+  width: 100%;
+  text-align: center;
+}
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: inline-block;
+  animation: bounce 1.4s infinite ease-in-out both;
+}
+.spinner > div:nth-child(1) {
+	background-color: #FF7F00;
+  animation-delay: -0.32s;
+}
+.spinner > div:nth-child(2) {
+	background-color: #2F9C07;
+  animation-delay: -0.16s;
+}
+.spinner > div:nth-child(3) {
+	background-color: #B3208A;
+}
+
+@keyframes bounce {
+  0%, 80%, 100% {
+    transform: scale(0);
+  } 40% {
+    transform: scale(1.0);
+  }
+}
+a {
+	color: #B4E329;
+	color: #cdec6f;
+/* 	color: #E4FAA6; */
+}
+
+a:focus, a:hover {
+	color: #fff;
+}
+a:hover {
+	text-decoration: none;
+}
+
+/* start titles */
+h1, h2 {
+	font-family: "Lobster", cursive;
+}
+
+h2 {
+	text-align: center;
+	font-size: 40px;
+	padding-bottom: 40px;
+	color: #B4E329;
+}
+
+h2 span {
+	color: #fff;
+/* 	font-weight: bold; */
+}
+
+/* end titles */
+/* start urodziny o_nas cennik atrakcje kontakt */
+#atrakcje, #urodziny, #cennik, #regulamin, #o_nas, #kontakt {
+	padding-top: 60px;
+	padding-bottom: 80px;
+}
+
+/* end urodziny o_nas cennik atrakcje kontakt */
+/* start header */
+header {
+	background: #B3208A;
+}
+header .top-bar {
+ 	min-height: 42px;
+	padding-top: 11px;
+	font-size: 13px;
+}
+
+header .fa {
+	color: #fff;
+}
+
+header span {
+	font-weight: 400;
+	padding-right: 10px;
+	padding-left: 4px;
+}
+
+header a {
+	color: #B4E329;
+	font-weight: 700;
+}
+
+header p {
+	margin-bottom: 2px;
+	margin-top: 3px;
+}
+header i + a {
+	margin-left: 13px;
+}
+header .social-icons {
+	text-align: right;
+}
+
+header .social-icons li a {
+	border: none;
+	width: 22px;
+	height: 22px;
+	line-height: 22px;
+	font-size: 12px;
+	text-align: center;
+}
+
+.navbar-default {
+	background: #fff;
+	border: none;
+	box-shadow: none;
+	margin: 0 !important;
+	/*box-shadow: 0 0 30px rgba(179, 32, 140, .5);*/
+}
+
+.navbar-default .navbar-brand {
+	font-weight: 500;
+	font-size: 30px;
+	height: 75px;
+	line-height: 40px;
+	padding: 2px 0px 0px 12px;
+	width: 5%;
+}
+.navbar-header {
+	width: 200px;
+}
+
+.navbar-brand .logo {
+	width: 200px;
+	min-width: 200px;
+	max-width: 200px;
+	height: auto;
+	/*margin-top: -10px;*/
+}
+
+.navbar-brand span {
+	visibility: hidden;
+}
+.navbar-default .navbar-nav li a {
+	font-weight: bold;
+	font-size: 15px;
+	height: 75px;
+	line-height: 47px;
+	color: #B3208A;
+	transition: all .3s ease-in-out;
+}
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:focus {
+	color: #52CD25;
+	color: white;
+}
+
+.navbar-default .navbar-nav > li > a.current {
+	color: #B4E329;
+	color: white;
+}
+a[href="#atrakcje"].current ,.navbar-default .navbar-nav  a[href="#atrakcje"]:hover,.navbar-default .navbar-nav  a[href="#atrakcje"]:focus {background: #B4E329}
+a[href="#urodziny"].current ,.navbar-default .navbar-nav  a[href="#urodziny"]:hover,.navbar-default .navbar-nav  a[href="#urodziny"]:focus {background: #FF7F00}
+a[href="#cennik"].current 	,.navbar-default .navbar-nav    a[href="#cennik"]:hover,.navbar-default .navbar-nav    a[href="#cennik"]:focus {background: #83AE07}
+a[href="#regulamin"].current,.navbar-default .navbar-nav a[href="#regulamin"]:hover,.navbar-default .navbar-nav a[href="#regulamin"]:focus {background: #2F9C07}
+a[href="#o_nas"].current 	,.navbar-default .navbar-nav     a[href="#o_nas"]:hover,.navbar-default .navbar-nav     a[href="#o_nas"]:focus {background: #B3208A}
+a[href="#kontakt"].current 	,.navbar-default .navbar-nav   a[href="#kontakt"]:hover,.navbar-default .navbar-nav   a[href="#kontakt"]:focus {background: #188BD6}
+
+.navbar {
+	border-radius: 0;
+	width: 100%;
+	z-index: 1000;
+}
+
+.sticky {
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+.pushed {
+	margin-top: 75px;
+}
+
+/* end header */
+/* start home */
+#home {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding-top: 80px;
+	padding-bottom: 80px;
+ 	/*min-height: 650px;*/
+min-height: calc(100vh - 117px); /* wys. headera */
+}
+@media (min-width: 768px) {
+	#home {
+		background-image: url('../images/home-bg-1920.jpg');
+	}
+}
+
+#home h1 {
+	font-size: 60px;
+	padding-bottom: 10px;
+/* 	color: #E698D0; */
+/* 	color: #B4E329; */
+	color: #FFFBA9;
+	line-height: 1.2;
+	text-shadow: 2px 3px 0 #1A6200, 1px 1px 25px #56003E;
+}
+
+#home h1 span {
+	color: #B4E329;
+/* 	font-weight: bold; */
+}
+
+#home .btn {
+	background: #ff7f00;
+ 	background: #188BD6;
+	border-color: transparent;
+	border-radius: 6px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin-top: 40px;
+	padding: 18px 24px;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+#home .btn:hover, #home .btn:focus {
+	background: #B4E329;
+	background: #B4E329;
+	border-color: transparent;
+}
+
+.typist {
+	height: 40px;
+	font-size: 32px;
+	font-weight: 900;
+	text-shadow: 2px 3px 0 #1A6200, 1px 1px 25px #56003E;
+}
+
+/* end home */
+/* start atrakcje */
+#atrakcje {
+	background: #B4E329;
+/* 	padding-bottom: 80px; */
+}
+
+#atrakcje h2 {
+	color: #B3208C;
+	color: #04819E;
+}
+#atrakcje .col-md-3 {
+	padding: 0;
+}
+
+.atrakcje-thumb, .atrakcje-overlay {
+	max-width: 450px;
+	max-width: 640px;
+/* 	border-radius: 100px !important; */
+}
+.atrakcje-thumb img {
+	border-radius: 9px;
+}
+
+.atrakcje-thumb {
+	padding: 10px;
+	margin: 0 auto;
+}
+
+.atrakcje-overlay {
+	background: hsla(104,93%,32%,.8);
+	top: 10px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: calc(100% - 20px);
+	height: calc(100% - 20px);
+	opacity: 0;
+	position: absolute;
+	padding: 20px;
+	margin: 0 auto;
+	border-radius: 9px;
+	font-size: 13px;
+	transition: all 0.3s ease-in-out;
+}
+
+.atrakcje-overlay .title {
+	font-weight: 900;
+	padding-bottom: 1px;
+}
+
+.atrakcje-overlay .btn {
+	background: none;
+	border: 1px solid hsla(75,77%,53%,.7);
+	border-radius: 50%;
+	/*display: block;*/
+	color: #fff;
+	font-size: 25px;
+	font-weight: normal;
+	transition: all 0.2s ease-in-out;
+}
+.atrakcje-overlay .btn:hover {
+	background: hsla(75,77%,53%,.5);
+	border: 1px solid hsla(75,77%,53%,1);
+}
+
+.atrakcje-thumb:hover .atrakcje-overlay {
+	opacity: 1;
+}
+
+/* end atrakcje */
+/* start urodziny */
+#urodziny {
+	background: #fe8a00;
+	background: #ff7f00;
+/* 		background: #FF4C0E; */
+}
+#urodziny h2 {
+/* 	color: #E4FAA6; */
+}
+#urodziny .media-heading-wrapper {
+	padding-bottom: 20px;
+}
+
+#urodziny .media-heading-wrapper .fa {
+	border: 1px solid #fff;
+	border-radius: 6px;
+	color: #fff;
+	font-size: 24px;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	margin-left:1px;
+}
+
+#urodziny .media-heading-wrapper h3 {
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-left: 52px;
+}
+#urodziny .media-body {
+	padding-bottom: 30px
+}
+/* end urodziny */
+/* start cennik */
+#cennik {
+	background: #2F9C07;
+	/*background: #00BF32;*/
+	background: #83AE07;
+}
+#cennik h2 {
+/* 	color: #e4f9a5; */
+}
+#cennik .col-md-4 {
+	padding: 40px;
+	transition: all 0.3s ease-in-out;
+	border-radius: 6px;
+}
+
+#cennik .col-md-4:hover {
+	background: #188BD6;
+}
+
+#cennik .active {
+	/*background: #188BD6;*/
+}
+
+#cennik .fa {
+	border: 1px solid #fff;
+	border-radius: 6px;
+	color: #fff;
+	font-size: 50px;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+}
+
+#cennik .title {
+	color: #B4E329;
+	font-weight: 600;
+	padding-top: 10px;
+	padding-bottom: 14px;
+}
+
+/* end cennik */
+/* start regulamin */
+#regulamin {
+	background-color: #B7AF08;
+	background: #736E00;
+	background: #83AE07;
+	background: #2F9C07;
+
+}
+/* end regulamin */
+/* start o_nas */
+#o_nas {
+	background: #B3208A;
+}
+#o_nas h2 {
+
+}
+.o_nas-wrapper {
+	background: #890665;
+/* 	background: #B3208A; */
+	padding-bottom: 10px;
+	border-radius: 6px;
+	transition: all 0.3s ease-in-out;
+	position: relative;
+	overflow: hidden;
+	max-width: 345px;
+	margin: 0 auto;
+}
+.o_nas-wrapper img {
+	width: 100%;
+	height: auto;
+}
+.o_nas-wrapper figcaption {
+	padding: 20px;
+}
+
+.o_nas-wrapper figcaption .role {
+	color: #B4E329;
+	font-weight: 700;
+}
+
+/* end o_nas */
+/* start kontakt */
+#kontakt {
+	background: #1A6200;
+	/* 	background: #516D00; */
+	background: #1F7200;
+	background: #04819E;
+	background: #188ad6;
+
+}
+
+#kontakt .form-control {
+	background: transparent;
+	border: 1px solid #B4E329;
+	border-radius: 6px;
+	box-shadow: none;
+	color: #fff;
+	margin-top: 6px;
+	margin-bottom: 16px;
+}
+
+#kontakt label {
+	font-weight: 500;
+}
+
+#kontakt input {
+	height: 50px;
+}
+
+#kontakt input[type="submit"] {
+	background: #B4E329;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: all 0.3s ease-in-out;
+}
+
+#kontakt input[type="submit"]:hover, #kontakt input[type="submit"]:focus {
+	background: #fff;
+	color: #298da4;
+	border-color: #fff;
+}
+
+#kontakt address {
+	border-bottom: 1px solid #298DA4;
+	padding-top: 22px;
+}
+
+#kontakt address .address-title {
+	font-weight: bold;
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+
+#kontakt address span {
+	/* display: block; */
+	padding-bottom: 30px;
+}
+
+#kontakt address .fa {
+	border: 1px solid #b3e329;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin: 0 9px 0 -1px;
+	font-size: 16px;
+}
+
+/* end kontakt */
+/* start copyright */
+#copyright {
+	padding: 30px;
+	background: #56003E;
+	background: #890665;
+/* 	background: #03647A; */
+background: #C66200;
+background: hsl(29, 100%, 42%);
+background: #D83700;
+background: #05568A;
+}
+
+#copyright p, #copyright a {
+	color: #E698D0;
+	color: #FFB164;
+	color: #67B2E3;
+}
+
+/* end copyright */
+/* start social icon */
+.social-icons {
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+.social-icons > * {
+	display: inline-block;
+}
+.social-icons ul {
+	padding-left: 15px;
+}
+.social-icons li {
+	display: inline-block;
+	list-style: none;
+}
+
+.social-icons li a {
+	border-radius: 50%;
+	background: #B4E329;
+	color: #fff;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+	margin-right: 10px;
+	font-size: 16px;
+}
+
+.social-icons li a:hover, .social-icons li a:focus  {
+	background: #fff;
+	color: #298da4;
+}
+
+/* end social icon */
+
+
+.fb-container {
+	/*text-align: right;*/
+	min-height: 500px;
+	background: #B4E329;
+	padding: 10px;
+	min-width: 360px;
+	max-width: 360px;
+	border-radius: 6px;
+	margin: 0 0 0 auto;
+	/*box-shadow: 0 0 35px #1A6200;*/
+}
+.fb-page {
+	display: inline-block;
+	width: 340px;
+	min-height: 500px;
+	/*-webkit-box-shadow: 0px 0px 1px 10px #B4E329, 0px 0px 35px 0px #1A6200;;*/
+	/*box-shadow: 0 0 0 10px #B4E329, 0 0 35px 0 #1A6200;*/
+
+	/*transform: translate(-18px);*/
+}
+#google-map {
+	line-height: 0.7;
+}
+#google-map div {
+	margin: 0; padding: 0;
+}
+/* start media queries */
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+	.atrakcje-overlay {
+		padding: 0px 8px;
+	}
+}
+
+/* start 980 media queries */
+@media only screen and ( max-width: 980px ) {
+	#o_nas .o_nas-wrapper {
+		margin-top: 40px;
+	}
+}
+
+/* start 768 media queries */
+@media only screen and ( max-width: 767px ) {
+	#home {
+		padding-top: 40px;
+		padding-bottom: 60px;
+		background-image: url('../images/home-bg-960.jpg');
+	}
+	#home .btn {
+		margin: 20px auto 30px 0;
+	}
+
+	#home h1 {
+		font-size: 52px;
+	}
+
+	.navbar {
+		position: fixed;
+		top: 0 !important;
+		margin-top: 0px !important;
+	}
+
+	header {
+		margin-top: 70px;
+	}
+	header p {
+		margin-top: 5px;
+	}
+	header .social-icon {
+		text-align: left;
+	}
+	.navbar-header {
+		width: auto;
+	}
+
+	.navbar-header .navbar-toggle {
+		margin-top: 18px;
+		border: solid 1px #E698D0;
+		border-radius: 6px;
+	}
+	.navbar-header .navbar-toggle:focus {
+		background: #fff;
+	}
+	.navbar-header .navbar-toggle:hover {
+		background: #E698D0;
+	}
+
+	.navbar-collapse {
+		max-height: 320px;
+		overflow-y: auto;
+
+	}
+	.navbar-default .navbar-toggle .icon-bar {
+		background-color: #890665;
+		height: 4px;
+	}
+	.navbar-default .navbar-nav li a {
+		height: 50px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		line-height: 40px;
+		color: #83AE07;
+		color: #890665;
+		font-size: 16px;
+	}
+	.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:focus {
+/* 		color: #B4E329; */
+		/*color: #52CD25;*/
+	}
+	#home h1, .typist {
+		text-shadow: -2px -3px 0 #1A6200;
+	}
+
+	.typist {
+		font-size: 21px;
+	}
+
+	.fb-container {
+		margin: 30px auto 0;
+		min-width: 280px;
+		width: 100%;
+		max-width: 500px;
+		padding: 0;
+		background: none;
+		border-radius: none;
+	}
+	.fb-page {
+		display: block;
+		min-height: 500px;
+		box-shadow: none;
+		overflow: visible;
+		transform: translate(0);
+	}
+	.fb-page,
+	.fb-page span,
+	.fb-page span iframe[style] {
+	    width: 100% !important;
+	}
+	.atrakcje-thumb {
+		padding: 20px;
+	}
+	.atrakcje-thumb img {
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+	.atrakcje-overlay {
+		position: static;
+		width: 100%;
+		height: auto;
+		opacity: 1;
+		font-size: 14px;
+		z-index: -1;
+		margin-top: -8px;
+		transition: all 0.3s ease-in-out;
+	}
+	.atrakcje-overlay .title {
+		font-size: 17px;
+		font-weight: 700;
+	}
+	.atrakcje-overlay .btn {
+		display: none;
+	}
+}
+/* end 768 media queries */
+
+/* start 360 media queries */
+@media only screen and ( max-width: 360px ) {
+	header .social-icon {
+		text-align: left;
+	}
+
+	#home {
+		min-height: 200px;
+		padding-top: 30px;
+		padding-bottom: 40px;
+	}
+
+	#home h1 {
+		font-size: 42px;
+	}
+
+	#atrakcje, #urodziny, #cennik, #o_nas, #kontakt {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	h2 {
+		padding-bottom: 20px;
+	}
+	.atrakcje-thumb {
+		padding: 10px;
+
+	}
+	#cennik .col-md-4 {
+		padding: 20px;
+	}
+	#cennik .active {
+		background: transparent;
+	}
+	#o_nas > div > div > div > p {
+		margin-bottom: -30px;
+	}
+
+}
+
+/* end 360 media queries */
+
+/* bootstrap-media-lightbox */
+
+#bootstrap-media-lightbox-caption-container {
+    position: absolute;
+    bottom: 15px;
+    padding: 0 15px;
+    width: 100%
+}
+
+#bootstrap-media-lightbox-caption {
+    background: #fff;
+    color: #890665;
+    padding: 9px;
+    border-radius: 13px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+}
+
+#bootstrap-media-lightbox-backward {
+    position: absolute;
+    top: 45%;
+    left: 20px;
+    font-size: 300%;
+    color: white;
+    cursor: pointer;
+}
+
+#bootstrap-media-lightbox-forward {
+    position: absolute;
+    top: 45%;
+    right: 20px;
+    font-size: 300%;
+    color: white;
+    cursor: pointer;
+}
+
+#bootstrap-media-lightbox-close {
+    position:absolute;
+    top:10px;
+    right:20px;
+    cursor: pointer;
+}
+
+#bootstrap-media-lightbox-close .glyphicon-remove-circle {
+    color:white;
+    font-size: 180%;
+}
+
+#bootstrap-media-lightbox-close .glyphicon-remove-circle {
+    color:white;
+    font-size: 180%;
+}
+
+#bootstrap-media-lightbox-close .fa-stack {
+    font-size: 180%;
+}
+#bootstrap-media-lightbox-close .fa-square {
+    color:#696969;
+}
+/* moje */
+#bootstrap-media-lightbox-content-container {
+position: relative !important;
+
+}
+#bootstrap-media-lightbox-content-container img {
+	position: absolute;
+	border-radius: 3px;
+	box-shadow: 0 0 0 10px white, 0 0 30px black;
+}
+#bootstrap-media-lightbox-close {
+	z-index: 2;
+}
+/* end bootstrap-media-lightbox */
+
+/* IE hack */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .svg {
+    width: 100%;
+  }
+}
