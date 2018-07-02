@@ -24,7 +24,7 @@ if (empty($_POST["message"])) {
 }
 
 //Add your email here
-$EmailTo = "anamaja.rafal.grzejszczyk@gmail.com";
+$EmailTo = "askalandia@gmail.com";
 $Subject = "Kontakt ze strony [formularz]";
 
 // prepare email body text
