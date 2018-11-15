@@ -380,23 +380,58 @@ a[href="#kontakt"].current 	,.navbar-default .navbar-nav   a[href="#kontakt"]:ho
 #home .btn {
     background: #ff7f00;
     background: #188BD6;
-    border-color: transparent;
-    border-radius: 6px;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin-top: 40px;
-    padding: 18px 24px;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+	background: transparent;
+	border-color: transparent;
+	border-radius: 6px;
+	color: #393475;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 70px;
+	padding: 22px 30px;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	overflow: hidden;
 }
-
+#home .btn::after {
+	content: '';
+	line-height: 0;
+	position: absolute;
+	top: 50%;
+	left: -15%;
+	width: 130%;
+	padding-top: 130%;
+	z-index: -1;
+	background: url(http://polkolonie.askalandia.pl/images/background_blue_1.jpg) center no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+	-webkit-animation: rotate-btn-bg 12s infinite linear;
+	animation: rotate-btn-bg 12s infinite linear;
+}
+@-webkit-keyframes rotate-btn-bg {
+	from {
+		-webkit-transform: translateY(-50%) rotate(0);
+		transform: translateY(-50%) rotate(0);
+	}
+	to {
+		-webkit-transform: translateY(-50%) rotate(360deg);
+		transform: translateY(-50%) rotate(360deg);
+	}
+}
+@keyframes rotate-btn-bg {
+	from {
+		-webkit-transform: translateY(-50%) rotate(0);
+		transform: translateY(-50%) rotate(0);
+	}
+	to {
+		-webkit-transform: translateY(-50%) rotate(360deg);
+		transform: translateY(-50%) rotate(360deg);
+	}
+}
 #home .btn:hover,
 #home .btn:focus {
-    background: #B4E329;
-    background: #B4E329;
+    /* background: #B4E329; */
     border-color: transparent;
 }
 
@@ -407,6 +442,7 @@ a[href="#kontakt"].current 	,.navbar-default .navbar-nav   a[href="#kontakt"]:ho
     margin-right: 6px;
     font-weight: normal;
     color: #b3208a;
+    color: #fff;
 }
 
 .flipper {
@@ -986,7 +1022,7 @@ button[type="submit"] i {
         background-image: url('../images/home-bg-960.jpg');
     }
     #home .btn {
-        margin: 20px auto 30px 0;
+        margin: 30px auto 30px 0;
     }
 
     #home h1 {
