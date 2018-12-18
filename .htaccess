@@ -3,18 +3,22 @@
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^askalandia.pl(.*) [NC]
 RewriteRule ^(.*)$ http://www.askalandia.pl/$1 [R=301,L]
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 </IfModule>
 
-Redirect 301 /atrakcje http://www.askalandia.pl/#atrakcje
-Redirect 301 /urodziny http://www.askalandia.pl/#urodziny
-Redirect 301 /regulamin http://www.askalandia.pl/#regulamin
-Redirect 301 /kontakt http://www.askalandia.pl/#kontakt
-Redirect 301 /do-pobrania http://www.askalandia.pl/#urodziny
-Redirect 301 /wp-content/uploads/2008/10/zaproszenie.pdf http://www.askalandia.pl/#urodziny
-Redirect 301 /category/zdjecia-galerie http://www.askalandia.pl/#atrakcje
+Redirect 301 /atrakcje https://www.askalandia.pl/#atrakcje
+Redirect 301 /urodziny https://www.askalandia.pl/#urodziny
+Redirect 301 /regulamin https://www.askalandia.pl/#regulamin
+Redirect 301 /kontakt https://www.askalandia.pl/#kontakt
+Redirect 301 /do-pobrania https://www.askalandia.pl/#urodziny
+Redirect 301 /wp-content/uploads/2008/10/zaproszenie.pdf https://www.askalandia.pl/#urodziny
+Redirect 301 /category/zdjecia-galerie https://www.askalandia.pl/#atrakcje
 
 #Redirect all 404 Errors to index
-ErrorDocument 404 http://www.askalandia.pl
+ErrorDocument 404 https://www.askalandia.pl
+
+#Header always set X-Frame-Options "SAMEORIGIN"
 
 ### EXPIRES CACHING ##
 #<IfModule mod_expires.c>

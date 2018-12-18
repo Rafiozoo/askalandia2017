@@ -14,6 +14,6 @@
     ],
     "theme_color": "#be419b",
     "background_color": "#be419b",
-    "start_url": "http://www.askalandia.pl",
+    "start_url": "https://www.askalandia.pl",
     "display": "standalone"
 }
