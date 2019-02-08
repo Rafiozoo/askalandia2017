@@ -187,7 +187,8 @@ ol ul {
     padding-left: 19px;
 }
 main li {
-    margin: 6px 0;
+    margin-bottom: 7px;
+    margin-top: 5px;
 }
 /* start titles */
 
@@ -223,7 +224,6 @@ h2 span {
     padding-top: 60px;
     padding-bottom: 80px;
 }
-
 
 /* end urodziny o_nas cennik atrakcje kontakt */
 
@@ -389,17 +389,22 @@ a[href="#kontakt"].current 	,.navbar-default .navbar-nav   a[href="#kontakt"]:ho
     background: #ff7f00;
     background: #188BD6;
 	background: transparent;
-	border-color: transparent;
+    border-color: transparent;
 	border-radius: 6px;
 	color: #393475;
 	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
 	margin-top: 70px;
-	padding: 20px 30px;
+	padding: 20px 40px;
 	-webkit-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
 	overflow: hidden;
+}
+@media (max-width: 767px) {
+    #home .btn {
+        border: 2px solid #B3208A;
+    }
 }
 #home .btn:after {
 	content: '';
@@ -409,8 +414,9 @@ a[href="#kontakt"].current 	,.navbar-default .navbar-nav   a[href="#kontakt"]:ho
 	left: -21%;
 	width: 142%;
 	padding-top: 142%;
-	z-index: -1;
-	background: url(https://res.cloudinary.com/rafiozoo/image/upload/v1544910096/askalandia/background_blue_1.jpg) center no-repeat;
+    z-index: -1;
+    background: url(https://res.cloudinary.com/rafiozoo/askalandia/background_blue_1.jpg) center no-repeat;
+	background: url(https://res.cloudinary.com/rafiozoo/askalandia/background_orange_1.jpg) center no-repeat;
 	-webkit-background-size: 100%;
 	background-size: 100%;
 	-webkit-animation: 12s linear 0s infinite rotate-btn-bg;
@@ -439,7 +445,7 @@ a[href="#kontakt"].current 	,.navbar-default .navbar-nav   a[href="#kontakt"]:ho
 #home .btn:hover,
 #home .btn:focus {
     /* background: #B4E329; */
-    border-color: transparent;
+    /* border-color: transparent; */
 }
 
 #home .btn:hover:before,
@@ -448,8 +454,9 @@ a[href="#kontakt"].current 	,.navbar-default .navbar-nav   a[href="#kontakt"]:ho
     font-family: fontawesome;
     margin-right: 6px;
     font-weight: normal;
-    color: #b3208a;
-    color: #fff;
+    font-size: 1.3em;
+    /* color: #b3208a; */
+    /* color: #fff; */
 }
 
 .flipper {
@@ -673,13 +680,20 @@ a[href="#kontakt"].current 	,.navbar-default .navbar-nav   a[href="#kontakt"]:ho
 #urodziny-zasady {
 	margin-top: 1.5em;
 }
-#urodziny-zasady ol {
-    /* padding-left: 22px; */
-}
 
-#urodziny-zasady li {
-    margin-bottom: 6px;
-    margin-top: 4px;
+#urodziny thead {
+    visibility: collapse;
+}
+#urodziny table caption {
+    display: table-row;
+    visibility: collapse;
+}
+#urodziny td {
+    padding: .4em 0;
+    vertical-align: top;
+}
+#urodziny td:nth-child(even) {
+    padding-left: 1em;
 }
 /* end urodziny */
 
@@ -732,19 +746,6 @@ a[href="#kontakt"].current 	,.navbar-default .navbar-nav   a[href="#kontakt"]:ho
 
 #regulamin {
     background: #2F9C07;
-}
-
-#regulamin li {
-    margin-bottom: 6px;
-    margin-top: 4px;
-}
-
-#regulamin ol {
-    /* padding-left: 22px; */
-}
-
-#regulamin ul {
-    /* padding-left: 19px; */
 }
 
 
@@ -1026,7 +1027,8 @@ button[type="submit"] i {
     #home {
         padding-top: 40px;
         padding-bottom: 60px;
-        background-image: url('../images/home-bg-960.jpg');
+        /* background-image: url('../images/home-bg-960.jpg'); */
+        background-image: url(https://res.cloudinary.com/rafiozoo/askalandia/background_orange_1.jpg);
     }
     #home .btn {
         margin: 30px auto 30px 0;
