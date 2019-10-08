@@ -407,19 +407,21 @@ a[href="#kontakt"].current 	,.navbar-default .navbar-nav   a[href="#kontakt"]:ho
     }
 }
 #home .btn:after {
-	content: '';
+    content: '';
 	line-height: 0;
 	position: absolute;
-	top: 50%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
 	left: -21%;
-	width: 142%;
-	padding-top: 142%;
+    width: 142%;
+    padding-top: 142%;
+    min-height: 200px; /* fix for old Chrome */
     z-index: -1;
     background: url(https://res.cloudinary.com/rafiozoo/askalandia/background_blue_1.jpg) center no-repeat;
 	background: url(https://res.cloudinary.com/rafiozoo/askalandia/background_orange_1.jpg) center no-repeat;
 	-webkit-background-size: 100%;
 	background-size: 100%;
-	-webkit-animation: 12s linear 0s infinite rotate-btn-bg;
+    -webkit-animation: 12s linear 0s infinite rotate-btn-bg;
 	animation: rotate-btn-bg 12s infinite linear;
 }
 @-webkit-keyframes rotate-btn-bg {
