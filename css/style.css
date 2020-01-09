@@ -607,10 +607,15 @@ a[href="#kontakt"].current 	,.navbar-default .navbar-nav   a[href="#kontakt"]:ho
 #promocje strong + strong {
     margin-top: -1em;
 }
+#promocje strong + br + strong {
+    margin-top: -.5em;
+}
 #promocje strong sup {
     font-size: .5em;
 }
-
+#promocje .row + .row {
+    margin-top: 4em;
+}
 /* end promocje */
 
 
