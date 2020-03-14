@@ -219,6 +219,7 @@ h2 span {
 
 /* start urodziny o_nas cennik atrakcje kontakt */
 
+#alert,
 #promocje,
 #atrakcje,
 #urodziny,
@@ -586,11 +587,11 @@ a[href="#kontakt"].current 	,.navbar-default .navbar-nav   a[href="#kontakt"]:ho
 
 /* start promocje */
 
-#promocje {
+#promocje, #alert {
     background-color: #B3208A;
 }
 @media (max-width:767px) {
-    #promocje p {
+    #promocje p, #alert p {
         margin-top: 2em;
     }  
 }
