@@ -3,11 +3,12 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Askalandia 🎈 Sala Zabaw dla Dzieci - Gorzów Wlkp.</title>
-	<meta name="description" content="Bawialnia w Galerii Askana w Gorzowie. Imprezy urodzinowe i okolicznościowe dla dzieci. Zarezerwuj salę na urodziny swojego dziecka!" />
+	<title>Askalandia - Sala Zabaw dla Dzieci - Gorzów Wielkopolski</title>
+	<meta name="description" content="Bawialnia w Galerii Askana w Gorzowie. Imprezy urodzinowe i okolicznościowe dla dzieci. Zarezerwuj salę na urodziny swojego dziecka 🎈" />
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Lobster|Nunito:400,700&amp;subset=latin-ext&amp;font-display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/2.1.1/animate.min.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -32,6 +33,17 @@
 </head>
 
 <body>
+	<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '105078766268191',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v6.0'
+    });
+  };
+</script>
+<script async defer src="https://connect.facebook.net/pl_PL/sdk.js"></script>
 	<!-- start header -->
 	<header id="top" role="banner">
 		<div class="container top-bar">
@@ -117,8 +129,7 @@
 				<div class="row">
 					<div class="col-sm-6 col-xs-12">
 						<h1 class="wow fadeIn" data-wow-offset="50" data-wow-delay="0.3s">Sala Zabaw <br><span>dla dzieci</span></h1>
-						<!-- <a href="#promocje" class="btn btn-lg wow fadeInUp" data-wow-delay="0.6s"><span>A</span><span>k</span><span>t</span><span>u</span><span>a</span><span>l</span><span>n</span><span>e</span> <span>P</span><span>r</span><span>o</span><span>m</span><span>o</span><span>c</span><span>j</span><span>e</span></a><br> -->
-						<a href="#alert" class="btn btn-lg wow fadeInUp" style="background-color: #D82A10;" data-wow-delay="0.6s">Uwaga! Nieczynne</a><br>
+						<a href="#promocje" class="btn btn-lg wow fadeInUp" data-wow-delay="0.6s"><span>A</span><span>k</span><span>t</span><span>u</span><span>a</span><span>l</span><span>n</span><span>e</span> <span>P</span><span>r</span><span>o</span><span>m</span><span>o</span><span>c</span><span>j</span><span>e</span></a><br>
 						<a title="Zajecia zorganizowane dla dzieci" href="http://polkolonie.askalandia.pl/" rel="external me" class="btn btn-polkolonie wow fadeInUp" data-wow-delay="0.9s">Półkolonie</a>
 					</div>
 					<div class="col-sm-6 col-xs-12 wow fadeIn" data-wow-delay="1.2s">
@@ -136,31 +147,58 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h2 class="wow bounceIn" data-wow-delay="0.1s">Uwaga!</h2>
+						<h2 class="wow bounceIn" data-wow-delay="0.1s">Zasady bezpieczeństwa</h2>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.1s">
-						<img src="images/coronavirus_2020_960x504.jpg" alt="Coronavirus - Do Not Cross - Medical Alert">
+					<div class="col-md-2 col-sm-4 col-xs-6 wow fadeInUp" data-wow-delay="0.1s">
+						<figure>
+							<img src="images/covid-pict-1.png" alt="Piktogram COVID-19: Gorączka">
+							<figcaption>Do sali może wejść wyłącznie zdrowe dziecko / opiekun</figcaption>
+						</figure>
 					</div>
-					<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.3s">
-						<h3>Zagrożenie epidemiczne</h3>
-						<p>W trosce o bezpieczeństwo Państwa i Państwa dzieci, podjęliśmy decyzję o zamknięciu Askalandii w dniach 13.03.–<time datetime="2020-03-25">25.03.2020 r.</time></p>
-						<p>O ewentualnych zmianach będziemy informować na bieżąco.
-						<br>Liczymy na Państwa zrozumienie.</p>
+					<div class="col-md-2 col-sm-4 col-xs-6 wow fadeInUp" data-wow-delay="0.2s">
+						<figure>
+							<img src="images/covid-pict-2.png" alt="Piktogram COVID-19: Dezynfekcja rąk">
+							<figcaption>Przed wejściem zdezynfekuj i umyj ręce sobie i swojemu dziecku</figcaption>
+						</figure>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 wow fadeInUp" data-wow-delay="0.3s">
+						<figure>
+							<img src="images/covid-pict-3.png" alt="Piktogram COVID-19: Maseczka">
+							<figcaption>Zasłaniaj nos i usta</figcaption>
+						</figure>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 wow fadeInUp" data-wow-delay="0.4s">
+						<figure>
+							<img src="images/covid-pict-4.png" alt="Piktogram COVID-19: Skarpetki">
+							<figcaption>Zdejmij obuwie i zmień skarpetki lub załóż ochraniacze</figcaption>
+						</figure>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 wow fadeInUp" data-wow-delay="0.5s">
+						<figure>
+							<img src="images/covid-pict-5.png" alt="Piktogram COVID-19: Zbędne rzeczy">
+							<figcaption>Nie wnoś niepotrzebnych rzeczy (zabawek, itp.)</figcaption>
+						</figure>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6 wow fadeInUp" data-wow-delay="0.6s">
+						<figure>
+							<img src="images/covid-pict-6.png" alt="Piktogram COVID-19: Dystans między osobami">
+							<figcaption>Zachowaj dystans – 2&nbsp;m pomiędzy osobami dorosłymi</figcaption>
+						</figure>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- <section id="promocje">
+		<section id="promocje">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
 						<h2 class="wow bounceIn" data-wow-delay="0.1s">Promocje</h2>
 					</div>
 				</div>
-				<div class="row">
+				<!-- <div class="row">
 					<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.1s">
 						<img src="images/promo_happy_hours_960x504.jpg" alt=" - bilet za 25 zł bez limitu czasu">
 					</div>
@@ -169,7 +207,7 @@
 						<p>od poniedziałku do czwartku oraz w niedziele niehandlowe 
 								<br><strong>Bilet za 25 zł</strong><strong class="text-uppercase">bez limitu czasu!</strong></p>
 					</div>
-				</div>
+				</div> -->
 				<div class="row">
 					<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.1s">
 						<img src="images/promo_urodziny_960x504.jpg" alt="Zabawa urodzinowa dla dzieci">
@@ -181,7 +219,7 @@
 					</div>
 				</div>
 			</div>
-		</section> -->
+		</section>
 
 		<section id="atrakcje">
 			<div class="container">
@@ -714,7 +752,8 @@
 	<!-- /#copyright -->
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<script src="js/jquery.singlePageNav.min.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script src="js/scripts.min.js"></script>
@@ -726,7 +765,7 @@
 			if (d.getElementById(id)) return;
 			js = d.createElement(s);
 			js.id = id;
-			js.src = "https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v3.2&appId=105078766268191";
+			js.src = "https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v6.0&appId=105078766268191";
 			fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));
 	</script>
