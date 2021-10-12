@@ -14,7 +14,11 @@
 </url>
 <url>
    <loc>https://www.askalandia.pl/polityka-prywatnosci.html</loc>
+<<<<<<< HEAD
    <lastmod>2019-08-12T07:01:23+02:00</lastmod>
+=======
+   <lastmod>2019-08-12T07:01:231+02:00</lastmod>
+>>>>>>> d581f2ab836819b785f714036fda32529607ec62
    <changefreq>monthly</changefreq>
    <priority>0.2</priority>
 </url>
